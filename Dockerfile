@@ -17,7 +17,8 @@ RUN chmod 644 /usr/local/share/ca-certificates/rootCA.crt && \
   update-ca-certificates
 
 # Set the environment variable OPENAI_API_KEY to empty string
-ENV OPENAI_API_KEY=skills-network
+# Replace "Your Api Key Here" with your actual OpenAI API key when deploying
+ENV "OPENAI_API_KEY"="Your Api Key Here"
 ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 # -----------------------------------------------------------------
